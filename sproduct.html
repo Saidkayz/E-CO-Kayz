@@ -60,8 +60,9 @@
                     <option>Medium</option>
                     <option>Small</option>
                 </select>
-                <input type="number" value="1">
-                <button class="add-cart">Add To Cart</button>
+                <input type="number" value="1" id="qty2">
+                <button class="add-cart" onclick="handleCart()">Add To Cart</button>
+                
                 <h4>Product Details</h4>
                 <span> </span>
             </div>
@@ -187,7 +188,7 @@
                     <img src="img/pay/play.jpg" alt="">
                 </div>
                 <p>Secure Payment Gateway</p>
-                <img src="img/pay/pay.png" alt="">
+                <img src="Untitled-2.png" alt="">
             </div>
 
 
@@ -196,25 +197,11 @@
             </div>
 
         </footer>
-        <script>
-            var MainImg = document.getElementById("MainImg");
-            var smallimg = document.getElementsByClassName("small-img");
-            smallimg[0].onclick = function (){
-                MainImg.src = smallimg[0].src;
-            }
-            smallimg[1].onclick = function (){
-                MainImg.src = smallimg[1].src;
-            }
-            smallimg[2].onclick = function (){
-                MainImg.src = smallimg[2].src;
-            }
-            smallimg[3].onclick = function (){
-                MainImg.src = smallimg[3].src;
-            }
-        </script>
+    
+        
 
 
-        <script src="script.js"></script>
+        <script src="sproductcart.js"></script>
     </body>
 
 </html>

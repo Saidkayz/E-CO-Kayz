@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> KayzMart</title>
+        <link rel="shortcut icon" type="icon" href="ecokayz.png">
         <script src="https://kit.fontawesome.com/b683677c0a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         
@@ -21,52 +22,150 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+<!--
                     <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></li>
-
-                    <li><a href="">Account  <i class="fa-solid fa-circle-user"></i></a></li>
-                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                 <li><a href="">Account  <i class="fa-solid fa-circle-user"></i></a></li>
+                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>-->
+                    <header>
+                    <div class="container">
+                        <nav>
+                          <div class="toggle">
+                            
+                                <i id="mobile" class="fas fa-outdent"></i>
+                            
+                          </div>
+                          <div class="nav">
+                            <ul class="nav_list">
+                                <i class="fa-solid fa-xmark close_nav"></i>
+                            </ul>
+                          </div>
+                        </nav>
+                        <div class="avatar">
+                           <i class="fa-solid fa-cart-shopping cart-ico"></i><!--src="./images/icon-cart.svg" alt="">-->
+                          <span class="product_count_"></span>
+                          <div class="cart-list">
+                            <p class="cart-list-header">Cart</p>
+                            <p class="empty-msg">Your cart is empty</p>
+                          </div>
+                        </img>
+                          <img onclick="window.location.href='Account.html';"class="ava" src="ecokayz.png" alt="">
+                        </div>
+                      </div>
+                    </header>
                 </ul>
             </div>
-            <div id="mobile">
-                <i id="bar" class="fas fa-outdent"></i>
-            </div>
+           
         </section>
         <section id="page-header" class="about-header">
         <h2>#cart</h2>
         </section>
-        <section id="cart" class="section-p1">
-            <table width="100%">
-                <thead>
-                    <tr>
-                        <td>Remove</td>
-                        <td>Images</td>
-                        <td>Products</td>
-                        <td>Price</td>
-                        <td>Quantity</td>
-                    </tr>
-                </thead>
-                <tbody class="cart-content">
-                   
-                </tbody>
-            </table>
-        </section>
-        <section id="cart-add" class="section-p1">
-            <div id="coupon">
-                <h3>Apply coupon</h3>
-                <div>
-                    <input type="text" placeholder="Enter Your coupon">
-                    <button>Apply</button>
+        <main>
+            <div class="main_container">
+              <div class="products">
+                <div class="big_img">
+                  <div class="mobile_pre">
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                      clip-rule="evenodd" viewBox="0 0 319 511.61">
+                      <path
+                        d="m270.08 5.89 43.04 43.04c7.85 7.86 7.83 20.72 0 28.54L134.77 255.82l178.35 178.35c7.85 7.86 7.8 20.73 0 28.54l-43.04 43.04c-7.83 7.82-20.71 7.82-28.54 0L49.29 313.49l-.37-.36-43.04-43.04c-7.82-7.83-7.86-20.68 0-28.54l43.04-43.04.37-.36L241.54 5.89c7.85-7.85 20.68-7.85 28.54 0z" />
+                    </svg>
+                  </div>
+                  <img class="big" src="/img/products/f1.jpg" alt="">
+                  <div class="mobile_next">
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                      clip-rule="evenodd" viewBox="0 0 319 511.61">
+                      <path
+                        d="m270.08 5.89 43.04 43.04c7.85 7.86 7.83 20.72 0 28.54L134.77 255.82l178.35 178.35c7.85 7.86 7.8 20.73 0 28.54l-43.04 43.04c-7.83 7.82-20.71 7.82-28.54 0L49.29 313.49l-.37-.36-43.04-43.04c-7.82-7.83-7.86-20.68 0-28.54l43.04-43.04.37-.36L241.54 5.89c7.85-7.85 20.68-7.85 28.54 0z" />
+                    </svg>
+                  </div>
                 </div>
+                <ul class="list">
+                  <li><img src="/img/products/f1.jpg" alt=""></li>
+                  <li><img src="/img/products/f2.jpg" alt=""></li>
+                  <li><img src="/img/products/f3.jpg" alt=""></li>
+                  <li><img src="/img/products/f4.jpg" alt=""></li>
+                </ul>
+                <div class="slider">
+                  <div class="container">
+                    <?xml version="1.0" ?>
+                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                      class="close_ico" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                      viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path
+                        d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" />
+                    </svg>
+                    <div class="set_img">
+                      <div class="pre">
+                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                          text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                          clip-rule="evenodd" viewBox="0 0 319 511.61">
+                          <path
+                            d="m270.08 5.89 43.04 43.04c7.85 7.86 7.83 20.72 0 28.54L134.77 255.82l178.35 178.35c7.85 7.86 7.8 20.73 0 28.54l-43.04 43.04c-7.83 7.82-20.71 7.82-28.54 0L49.29 313.49l-.37-.36-43.04-43.04c-7.82-7.83-7.86-20.68 0-28.54l43.04-43.04.37-.36L241.54 5.89c7.85-7.85 20.68-7.85 28.54 0z" />
+                        </svg>
+                      </div>
+                      <div class="main_img">
+                        <img src="/img/products/f1.jpg" alt="">
+                      </div>
+                      <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                          text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                          clip-rule="evenodd" viewBox="0 0 319 511.61">
+                          <path
+                            d="m270.08 5.89 43.04 43.04c7.85 7.86 7.83 20.72 0 28.54L134.77 255.82l178.35 178.35c7.85 7.86 7.8 20.73 0 28.54l-43.04 43.04c-7.83 7.82-20.71 7.82-28.54 0L49.29 313.49l-.37-.36-43.04-43.04c-7.82-7.83-7.86-20.68 0-28.54l43.04-43.04.37-.36L241.54 5.89c7.85-7.85 20.68-7.85 28.54 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <ul class="imgs_list">
+                      <li><img src="/img/products/f1.jpg" alt=""> <span class="overflow"></span></li>
+                      <li><img src="/img/products/f1.jpg" alt=""> <span class="overflow"></span></li>
+                      <li><img src="/img/products/f1.jpg" alt=""> <span class="overflow"></span></li>
+                      <li><img src="/img/products/f1.jpg" alt=""> <span class="overflow"></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="text-content">
+                <p>Summer shirts</p>
+                <h1>Kayzmart Limited Edition shirts</h1>
+                <p class="definition">These low-profile shirts are your perfect casual wear companion. Featuring a
+                  durable rubber outer collor, they'll withstand everything the weather can offer.</p>
+                <div class="salary">
+                  <h2>$125.00</h2>
+                  <p>50%</p>
+                </div>
+                <p class="line-through">$250.00</p>
+                <div class="mobile_salary">
+                  <div>
+                    <h2>$125.00</h2>
+                    <p>50%</p>
+                  </div>
+                  <div>
+                    <p class="mobile-line-through">$250.00</p>
+                  </div>
+                </div>
+                <div class="ord">
+                  <div class="counter">
+                    <span class="dec"><i class="fa-solid fa-minus"></i></span>
+                    <p class="product_count">0</p>
+                    <span class="incr"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                  <button id="add_to_cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16">
+                      <path
+                        d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                        fill="#FFF" />
+                    </svg>
+                    Add to cart</button>
+          
+                </div>
+              </div>
             </div>
-            <div id="subtotal">
-                <h3>Cart Totals</h3>
-                <table>
-                <tr><td><strong>Total</strong></td>
-                <td class="total-price"><strong>KSH0</strong></td></tr>
-                </table>
-                <button class="btn-buy">Proceed to Checkout</button>
-            </div>
-        </section>
+            <p class="add_to_cart_msg">Added To Cart <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1.0009765625em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1025 1024" version="1.1"><path d="M994.305 166.16c-39.945-40.917-104.706-40.917-144.652 0L391.586 635.504 174.61 413.192c-39.946-40.936-104.706-40.936-144.643 0-39.956 40.918-39.956 107.283 0 148.214l289.296 296.42c39.946 40.936 104.7 40.936 144.647 0l530.395-543.451c39.947-40.927 39.947-107.283 0-148.215z"/></svg></p>
+          </main>
+        
         <footer class="section-p1">
             <div class="col">
                 <img class="logo" src="img/logo.png" alt="">
@@ -87,18 +186,18 @@
             </div>
             <div class="col">
                 <h4>About</h4>
-                <a href="#">About Us</a>
+                <a href="about.html">About Us</a>
                 <a href="#">Delivery Information</a>
                 <a href="#">Terms and Conditions</a>
-                <a href="#">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
             </div>
             <div class="col">
                 <h4>My Account</h4>
-                <a href="#">sign In</a>
-                <a href="#">View Cart</a>
+                <a href="Account.html">sign In</a>
+                <a href="cart.html">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track My Order</a>
-                <a href="#">Help</a>
+                <a href="contact.html">Help</a>
             </div>
             <div class="col install">
                 <h4>Install App</h4>
@@ -108,7 +207,7 @@
                     <img src="img/pay/play.jpg" alt="">
                 </div>
                 <p>Secure Payment Gateway</p>
-                <img src="img/pay/pay.png" alt="">
+                <img src="Untitled-2.png" alt="">
             </div>
 
 
@@ -119,7 +218,7 @@
         </footer>
 
 
-        <script src="script.js"></script>
+        <script src="cart.js"></script>
     </body>
 
 </html>

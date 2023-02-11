@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> KayzMart</title>
+        <link rel="shortcut icon" type="icon" href="ecokayz.png">
         <script src="https://kit.fontawesome.com/b683677c0a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         
@@ -21,14 +22,35 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a class="active" href="contact.html">Contact</a></li>
-                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li><a href="">Account  <i class="fa-solid fa-circle-user"></i></a></li>
-                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                    
                 </ul>
             </div>
-            <div id="mobile">
-                <i id="bar" class="fas fa-outdent"></i>
-            </div>
+            <header>
+                <div class="container">
+                    <nav>
+                      <div class="toggle">
+                        
+                            <i id="mobile" class="fas fa-outdent"></i>
+                        
+                      </div>
+                      <div class="nav">
+                        <ul class="nav_list">
+                            <i class="fa-solid fa-xmark close_nav"></i>
+                        </ul>
+                      </div>
+                    </nav>
+                    <div class="avatar">
+                       <i class="fa-solid fa-cart-shopping cart-ico"></i><!--src="./images/icon-cart.svg" alt="">-->
+                      <span class="product_count_"></span>
+                      <div class="cart-list">
+                        <p class="cart-list-header">Cart</p>
+                        <p class="empty-msg">Your cart is empty</p>
+                      </div>
+                    </img>
+                      <img onclick="window.location.href='Account.html';"class="ava" src="ecokayz.png" alt="">
+                    </div>
+                  </div>
+                </header>
         </section>
         <section id="page-header" class="about-header">
         <h2>#Let's Talk Now</h2>
@@ -67,10 +89,10 @@
             <form action="">
                 <span>Leave a Message</span>
                 <h2>We Love To hear from You</h2>
-                <input type="text" placeholder="Your Name">
+                <input type="text" id="Name"placeholder="Your Name">
                 <input type="email" placeholder="Your Email">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="text" id="subject"placeholder="Subject">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <button>Submit</button>
             </form>
             <div class="people">
@@ -78,14 +100,7 @@
                     <img src="img/people/1.png" alt="">
                     <p><span>Said Kisiwa Kiteo</span>Founder<br> Phone:+254 791 579 344 <br> Email: kayzsaid69@gmail.com</p>
                 </div>
-                <div>
-                    <img src="img/people/2.png" alt="">
-                    <p><span>Said Kisiwa Kiteo</span>Chief Executive Officer<br> Phone:+254 791 579 344 <br> Email: kayzsaid69@gmail.com</p>
-                </div>
-                <div>
-                    <img src="img/people/3.png" alt="">
-                    <p><span>Said Kisiwa Kiteo</span>Chief Executive Officer<br> Phone:+254 791 579 344 <br> Email: kayzsaid69@gmail.com</p>
-                </div>
+                
             </div>
         </section>
         <section id="newsletter"class="section-p1 section-m1">
@@ -118,18 +133,18 @@
             </div>
             <div class="col">
                 <h4>About</h4>
-                <a href="#">About Us</a>
+                <a href="about.html">About Us</a>
                 <a href="#">Delivery Information</a>
                 <a href="#">Terms and Conditions</a>
-                <a href="#">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
             </div>
             <div class="col">
                 <h4>My Account</h4>
-                <a href="#">sign In</a>
-                <a href="#">View Cart</a>
+                <a href="Account.html">sign In</a>
+                <a href="cart.html">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track My Order</a>
-                <a href="#">Help</a>
+                <a href="contact.html">Help</a>
             </div>
             <div class="col install">
                 <h4>Install App</h4>
@@ -139,7 +154,7 @@
                     <img src="img/pay/play.jpg" alt="">
                 </div>
                 <p>Secure Payment Gateway</p>
-                <img src="img/pay/pay.png" alt="">
+                <img src="Untitled-2.png" alt="">
             </div>
 
 
@@ -148,7 +163,31 @@
             </div>
 
         </footer>
-
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+        <script>
+            emailjs.init("00bQMxYtbtznz1uTX");
+         </script>
+         <script>
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+               event.preventDefault();
+         
+                const formData = new FormData(form);
+                console.log(formData) 
+                const from = document.querySelector("#Name").value;
+               const subject = document.querySelector("#subject").value;
+               const message = document.querySelector("#message").value;
+         
+               emailjs.send("service_cwue72i", "template_jgdi7u4", {from, subject, message})
+                  .then(function() {
+                     alert("Email sent successfully!");
+                  })
+                  .catch(function(error) {
+                     console.error("Failed to send email:", error);
+                  });
+            });
+         </script>
+         
 
         <script src="script.js"></script>
     </body>

@@ -1,16 +1,5 @@
 // Script for navigation bar
-let bar = document.querySelector("#bar");
-let nav = document.querySelector("#navbar");
-let closenav = document.querySelector("#closenav");
-
-//open
-bar.onclick = () => {
-        nav.classList.add("active");
-    };
-//close
-closenav.onclick = () => {
-        nav.classList.remove("active");
-    };
+/*
 //cart working js
 
 if(document.readyState == "loading"){
@@ -43,7 +32,7 @@ function ready(){
     //proceed to checkout
     document
     .getElementsByClassName('btn-buy')[0].addEventListener('click', buybuttonclicked);
-}
+}*/
 // checkout
 function buybuttonclicked(){
     alert('Your order is placed')
@@ -52,7 +41,7 @@ function buybuttonclicked(){
         cartContent.removeChild(cartContent.firstChild);
     }
     updatetotal();
-}
+}/*
 
 //remove item from cart
 function removecartitem(event){
@@ -122,4 +111,18 @@ function updatetotal(){
         document.getElementsByClassName('total-price')[0].innerText = "KSH" + total;
 
     
+}*/
+var MainImg = document.getElementById("MainImg");
+var smallimg = document.getElementsByClassName("small-img");
+smallimg[0].onclick = function (){
+    MainImg.src = smallimg[0].src;
+}
+smallimg[1].onclick = function (){
+    MainImg.src = smallimg[1].src;
+}
+smallimg[2].onclick = function (){
+    MainImg.src = smallimg[2].src;
+}
+smallimg[3].onclick = function (){
+    MainImg.src = smallimg[3].src;
 }

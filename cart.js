@@ -190,7 +190,7 @@ function addToLocal() {
                 </div>
               </li>
             </ul>
-            <button onclick="window.location.href='Mpesa.html';"class="check_btn">Checkout</button>
+            <button onclick="window.location.href='Mpesa.php';"class="check_btn">Checkout</button>
     </div>
     `
         if (document.querySelectorAll(".cart-list .content").length == 2) {

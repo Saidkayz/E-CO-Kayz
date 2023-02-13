@@ -74,9 +74,6 @@ button .normal{
 body {
   width: 100%;
 }
-#closenav{
-  display: none;
-}
 
 #header{
   display: flex;
@@ -89,41 +86,8 @@ body {
   top: 0;
   left: 0;
 }
-#navbar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#navbar li{
-  list-style: none;
-  padding: 0 20px;
-  position: relative;
-}
-#navbar li a{
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a1a;
-  transition: 0.3s ease;
-}
-#navbar li a:hover,
-#navbar li a.active {
-  color: #FF8000;
-}
-#navbar li a.active::after,
-#navbar li a:hover::after{
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: #FF8000;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
-}
-#mobile{
-  display: none;
-  align-items: center;
-}
+
+
 /*home page*/
 #hero{
   background-image: url(img/hero4.png);
@@ -744,121 +708,6 @@ cursor: pointer;
   font-weight: 600;
   color: #000;
 }
-/*cart page*/
-#cart{
-  overflow-x: auto;
-}
-#cart table{
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  white-space: nowrap;
-}
-#cart table img{
-  width: 70px;
-}
-#cart table td:nth-child(1){
-  width: 100%;
-  text-align: center;
-
-}
-#cart table td:nth-child(2){
-  width: 150px;
-  text-align: center;
-
-}
-#cart table td:nth-child(3){
-  width: 250px;
-  text-align: center;
-
-}
-#cart table td:nth-child(4),#cart table td:nth-child(5),#cart table td:nth-child(6){
-  width: 150px;
-  text-align: center;
-
-}
-#cart table td:nth-child(5) input{
-  width: 70px;
-  padding: 10px 5px 10px 15px;
-
-}
-#cart table thead{
-  border: 1px solid #e2e9e1;
-  border-left: none;
-  border-right: none ;
-}
-#cart table thead td{
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
-  padding: 18px 0;
-}
-#cart table tbody tr td{
-  padding-top: 15px;
-}
-#cart table tbody  td{
-  font-size: 13px;
-}
-#cart-add{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-#coupon{
-  width: 50%;
-  margin-bottom: 30px;
-}
-#coupon h3,#subtotal h3{
-  padding-bottom: 15px;
-}
-#coupon input{
-  padding: 10px 20px;
-  outline: none;
-  width: 60%;
-  margin-right: 10px;
-  border: 1px solid #e2e9e1;
-}
-#coupon button{
-  cursor: pointer;
-  transition: 0.2s;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 12px 20px;
-  color:#fff;
-  background:#FF8000;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-}
-#subtotal{
-  width: 50%;
-  margin-bottom: 30px;
-  border: 1px solid #e2e9e1;
-  padding: 30px;
-}
-#subtotal table{
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 20px;
-}
-#subtotal table td{
-  font-size: 13px;
-  padding: 10px;
-  border: 1px solid #e2e9e1;
-  width: 50%;
-}
-#subtotal button{
-  cursor: pointer;
-  transition: 0.2s;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 12px 20px;
-  color:#fff;
-  background:#FF8000;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-}
 /*Account page*/
 #account{
   display: flex;
@@ -949,44 +798,7 @@ form a{
   .section-p1{
     padding: 40px 40px;
   }
-  #navbar{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 300px;
-    background-color: #E3E6F3;
-    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
-    padding: 80px 0 0 10px;
-    transition: 0.3s;
-  }
-  #navbar.active{
-    right: 0;
-  }
-  #navbar li{
-    margin-bottom: 25px;
-  }
-  #mobile{
-    display: flex;
-    align-items: center;
-  }
-  #mobile i{
-    font-size: 24px;
-    color: #1a1a1a;
-    padding-left: 20px;
-  }
-  #closenav{
-    display: initial;
-    top: 30px;
-    position: absolute;
-    color: #222;
-    left: 30px;
-    font-size: 24px;
-  }
+
   #hero{
     height: 70vh;
     padding: 0 80px;
@@ -1026,27 +838,8 @@ form a{
 }
 }
 @media (max-width:477px) {
-  #header{
-    padding: 10px 30px;
-  }
-  #mobile{
-    display: flex;
-    align-items: center;
-    border: 2px solid red;
-  }
-  #mobile i{
-    font-size: 24px;
-    color: #1a1a1a;
-    padding-left: 20px;
-  }
-  #closenav{
-    display: initial;
-    top: 30px;
-    position: absolute;
-    color: #222;
-    left: 30px;
-    font-size: 24px;
-  }
+
+ 
   h2{
     font-size: 32px;
   }
@@ -1153,17 +946,6 @@ width: 100%;
   margin-bottom: 30px;
   
 }
-/*cart page*/
-#cart-add{
-  flex-direction: column;
-}
-#coupon {
-  width: 100%;
-}
-#subtotal {
-  width: 100%;
-  padding: 20px;
-}
 /*account page*/
 .form-container {
  
@@ -1189,25 +971,51 @@ header {
   /* position: relative; */
 }
 
-header .container {
+header .container23 {
   width: 80%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
   border-bottom: 1px solid hsl(223, 64%, 98%);
 }
 
 header nav {
   display: flex;
-  width: 60%;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
-
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.nav_list li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+.nav_list li a:hover,
+.nav_list li a.active {
+  color: #FF8000;
+}
+.nav_list li a.active::after,
+.nav_list li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #FF8000;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
 header .nav_list {
   display: flex;
   list-style: none;
+  padding: 0 20px;
 }
 
 header .nav_list li {
@@ -1801,7 +1609,7 @@ main {
   }
   header{
       height: 70px;
-      background: #fff;
+      background:transparent;
       display: flex;
       padding: 0;
   }

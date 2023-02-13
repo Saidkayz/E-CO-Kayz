@@ -839,7 +839,13 @@ form a{
 }
 @media (max-width:477px) {
 
- 
+ /*mpesa*/
+ .container7{
+ width: 90%;
+}
+.container7 input{
+  width: 60%;
+}
   h2{
     font-size: 32px;
   }

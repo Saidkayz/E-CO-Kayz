@@ -488,7 +488,7 @@ footer .copyright{
   width: 40%;
   margin-right: 50px;
 }
-.small-img-group{
+.list{
   display: flex;
   justify-content: space-between;
 }

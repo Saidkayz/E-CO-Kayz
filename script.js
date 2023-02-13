@@ -293,3 +293,19 @@ document.querySelector(".toggle").addEventListener("click", ()=>{
 document.querySelector(".close_nav").addEventListener("click", ()=>{
     document.querySelector(".nav").style.animation = "fade_mobile_nav 1s 1 forwards"
 })
+// SINGLE PRODUCT
+var MainImg = document.getElementById("MainImg");
+var smallimg = document.getElementsByClassName("smalli-img");
+smallimg[0].onclick = function (){
+    MainImg.src = smallimg[0].src;
+}
+smallimg[1].onclick = function (){
+    MainImg.src = smallimg[1].src;
+}
+smallimg[2].onclick = function (){
+    MainImg.src = smallimg[2].src;
+}
+smallimg[3].onclick = function (){
+    MainImg.src = smallimg[3].src;
+}
+
